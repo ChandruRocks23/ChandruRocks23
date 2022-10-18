@@ -1,1 +1,17 @@
-
+public class Mobile extends Telephone 
+{
+ int price = 15000; 
+String name = "Mobile"; 
+public void sms() 
+{
+ System.out.println("Messaging Facility");
+ }
+ public static void main(String[] args)
+ { 
+Mobile vivo = new Mobile();
+ System.out.println(vivo.price);
+ System.out.println(vivo.name);
+ vivo.call();
+ vivo.received_call();
+ } 
+}
